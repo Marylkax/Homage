@@ -1,0 +1,60 @@
+$fontsize: 10px;
+$font-family: Futura, Trebuchet MS, Arial, sans-serif;
+$color: black;
+
+ body {
+    fontsize: $fontsize;
+    font-family: $font-family;
+    color: $color
+ }
+ .menu {
+   background-color: black;
+   width: 20px;
+   height: 4px;
+ margin-bottom: 2px; 
+grid-row-start:1;
+grid-column-start:1;}
+
+ .title_container   {
+   display: grid;
+   height: 80px;
+   text-align: center;
+   grid-template-columns: 20% 30% 20% 10% 10% 10%;
+   grid-template-rows:20px 100px 20px;
+    }
+   .search {
+   grid-column-start: 4;
+   }
+   .play { 
+      grid-column-start:5;
+   }
+   .account {
+      grid-column-start:6;
+   }
+   .title {
+     grid-row-start: 1;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      justify-content: center;
+      font-size: 70px;
+   
+   }
+   /*
+  .icon_container:hoover  {
+    color: #F79148;
+   }
+   */
+ 
+ .navbar_container {
+text-align: center;
+justify-content:space-between ;
+box-sizing:border-box;
+border: solid grey 1px;
+height: 50px;
+padding: 10px;
+ }
+ .video  {
+   box-sizing: border-box;
+   height: 400px;
+   border: solid grey 1px;
+ }
