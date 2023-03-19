@@ -1,208 +1,318 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles.css" />
-    <link rel="stylesheet" href="/homage.scss" />
-    <title>Homage</title>
-  </head>
-  <body>
-    <!--<div class="socials_container">
-       <div class="socials_title">
-        <p>Connect with NOWNESS</p> 
-      </div>
-    -->
-    <div class="title_container">
-      <div class="menu_container">
-        <div class="menu"></div>
-        <div class="menu"></div>
-        <div class="menu"></div>
-      </div>
-      <div class="navbar">
-        <!--list?-->
-        <ul>
-          <li>PLAYLIST</li>
-          <li>SERIES</li>
-          <li>SPECIAL PROGRAMS</li>
-          <li>ART & DESIGN</li>
-          <li>FASHION & BEAUTY</li>
-          <li>MUSIC & DANCE</li>
-          <li>FOOD & TRAVEL</li>
-          <li>CULTURE & LIFESTYLES</li>
-          <li>TOPICS</li>
-          <li>PICKS</li>
-          <li>icons</li>
-          <li>NOWNESS AWARDS</li>
-          <li>ABOUT US</li>
-          <li>MASTHEAD</li>
-          <li>CONTACT US</li>
-          <li>SITES</li>
-        </ul>
-      </div>
-      <div class="title">
-        <img src="/Assets/logo.svg" />
-      </div>
-      <div class="icon_container">
-        <img src="/Assets/search.png" />
-        <img src="/Assets/play.png" />
-        <img src="/Assets/account.png" />
-      </div>
-    </div>
+body {
+  font-size: 16px;
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  color: black;
+  box-sizing: border-box;
+  /* letter-spacing: 0.09em; spacing not quite right*/
+  /* margin: 0; */
+}
+.title_container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-top: 12.5px;
+  padding-bottom: 12.5px;
+  border-bottom: solid grey 1px;
+  background-color: #ffffff;
+  position: sticky;
+  /* justify-content: space-around; */
+}
 
-    <div class="navbar_container">
-      <a class="navbar_item">SERIES</a>
-      <a class="navbar_item">TOPICS</a>
-      <a class="navbar_item">PICKS</a>
-      <a class="navbar_item">NOWNESS DIGITAL FESTIVAL</a>
-      <a class="navbar_item">SPECIAL PROGRAMS</a>
-      <a class="navbar_item">NOWNESS AWARDS</a>
-    </div>
-    <div class="video_reels">
-      <iframe
-        src="https://www.youtube.com/embed/Utspp6IZlL0"
-        title="Meet the artists | Chiharu Shiota"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
-    </div>
-    <div class="video_caption">
-      <h2>Meet the artists by Art Basel: Chiharu Shiota</h2>
-      <p>
-        The Berlin based artist explores human connection, memory and fragility
-        of existence in sprawling installations of wool thread
-      </p>
-    </div>
-    <div class="video_reels_list_container">
-      <div class="video_reels_list">
-        <p>March 15</p>
-        <div class="reel_img">
-        <img src="/Assets/inner_worlds.jpg" />
-        <p class="time">05:35</p>
-      </div>
-        <a>Inner Worlds:Jaffa Lam</a>
-      </div>
-      <div class="video_reels_list">
-        <p>March 10</p>
-        <div class="reel_img">
-        <img src="/Assets/one_thing.jpg" />
-        <p class="time">02:41</p>
-      </div>
-        <a>One Thing</a>
-      </div>
-      <div class="video_reels_list">
-        <p>March 8</p>
-        <div class="reel_img">
-        <img src="/Assets/tits.jpg" />
-        <p class="time"> 02:42</p>
-        </div>
-          <a>TITS: A Voyage Into Objectification</a>
-      </div>
-      <div class="video_reels_list">
-        <p>March 6</p>
-        <div class="reel_img">
-        <img src="/Assets/nowness_experiments.jpg" />
-        <p class="time">07:12</p>
-      </div>
-        <a>Nowness Experiments: Hot Slots</a>
-      </div>
-      <div class="video_reels_list">
-        <p>March 3</p>
-        <div class="reel_img">
-        <img src="/Assets/they_call_me.jpg" />
-        <p class="time">03:49</p>
-        </div>
-        <a>They Call Me...Puma</a>
-      </div>
-      </div>
-    <div class="video_reels_surreal">
-      <h3>SURREAL ENCOUNTERS</h3>
-      <div class="video_reels_surreal_container">
-        <div class="video_reels_section">
-      <div class="clip_surreal">
-        <div class="reel_img">
-        <img src="/Assets/juniper.jpg" />
-        <p class="time">09:21</p>
-      </div>
-      </div>
-      <a>Juniper - The Interview</a>
-      <p>
-        Retterspitz enlists directors Bjorn Swoboda and Eike Frederik Schulz to
-        weave its JUNIPER Eau De Parfum into a surreal cinematic landscape
-      </p>
-    </div>
+.menu {
+  background-color: black;
+  width: 20px;
+  height: 4px;
+  margin-bottom: 2px;
+}
+.menu_container {
+  justify-self: start;
+  position: relative;
+}
+.title {
+  width: 100px;
+  height: 16.59px;
+  margin-left: 10px;
+  justify-self: start;
+}
+.title img {
+  width: 100%;
+}
+.icon_container {
+  display: flex;
+  margin-left: auto;
+}
+.icon_container img {
+  width: 17px;
+  height: 17px;
+}
 
-      <div class="video_reels_section">
-      <div class="clip_surreal">
-        <div class="reel_img">
-        <img src="/Assets/moon.jpg" />
-        <p class="time">04:52</p>
-      </div>
-      </div>
-      <a>Moon</a>
-      <p>
-        A lone restaurant guest waits out the end of the world in this surreal
-        short with an unexpected twist
-      </p>
-      </div>
+.navbar_container {
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+  font-size: 13px;
+  font-weight: 200;
+  overflow: auto;
+  overflow-y: scroll;
+  white-space: nowrap; /*- what's this do? removes space - but not used white space before? */
+  /* position: relative; */
+  top: 43.67px;
+  background-color: #ffffff;
+  margin-top: 10px;
+}
+.navbar_container .navbar_item {
+  padding: 15px 20px;
+}
+.video_reels_surreal {
+  margin-top: 2 0px;
+}
+.video_reels {
+  margin-bottom: 20px;
+}
+.video_2 {
+  width: 220px;
+  height: 142px;
+}
+.video_reels iframe {
+  width: 100%;
+  height: 190px;
+}
+.video_caption {
+  margin: 40px 20px 40px 20px;
+  text-align: center;
+  /* how to position this correctly */
+}
+.video_caption h2 {
+  font-size: 24px;
+}
+.video_caption p {
+  font-size: 13px;
+}
+.video_reels_list_container {
+  display: grid;
+  align-items: center;
+  overflow-x: scroll;
+  grid-template-columns: repeat(5, 1fr);
+  border-top: 1px solid #c9a16e;
+  margin-bottom: 30px;
+  /* display: flex; 
+  overflow: auto;
+  overflow-y: scroll;*/
+}
+/* could this section be selected with an attribute selector? */
+.video_reels_list {
+  padding: 20px 20px 40px 0px;
+  text-align: center;
+  height: 200px;
+}
+.video_reels_list p {
+  font-size: 13px;
+}
+.navbar {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  margin-left: none;
+}
+.navbar ul {
+  padding-inline-start: 0px;
+}
+.navbar li {
+  list-style: none;
+  position: relative;
+  top: 70px;
+  left: 0;
+  text-align: left;
+  width: 100%;
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  /* font-weight: 400; thicker font? */
+  background-color: #f8f8f8;
+}
 
-      <div class="video_reels_section">
-      <div class="clip_surreal">
-        <div class="reel_img">
-        <img src="/Assets/serpentine.jpg" />
-        <p class="time">09:57</p>
-      </div>
-      </div>
-      <a>Serpentine</a>
-      <p>
-        Barbara Palvin and Soo Joo Park star in Eva Dolezalova’s stylized
-        body-horror, following the metamorphosis of a snake-human interspecies
-      </p>
-    </div>
-    </div>
-  </div>
-    <div class="video_reels_love">
-      <h4>LOVE ON SCREEN</h4>
-      <div class="reel_img">
-    <img src="/Assets/lovesick.jpg" />
-    <p class="time">03:36</p>
-  </div>
-    <a>Lovesick: First Love</a>
-    <p>Relive every intoxicating moment of your first passionate love</p>
-    <div class="reel_img">
-    <img src="/Assets/sendino.jpg" />
-    <p class="time">03:18</p>
-  </div>
-    <a>Sendino: Exchange</a>
-    <p>
-      Two food truck workers turn the humble egg yolk into an erotic aphrodisiac
-    </p>
-    <div class="reel_img">
-    <img src="/Assets/lovesick_make_me.jpg" />
-    <p class="time">05:09</p>
-  </div>
-    <a>LoveSick: You Make Me Weak At The Knees</a>
-    <p>A confessional portrait of the highs and lows of open relationships</p>
-    <div class="reel_img">
-    <img src="/Assets/lacuna.jpg" />
-    <p class="time">02:25</p>
-  </div>
-    <a>Lacuna</a>
-    <p>Why do great relationships fall apart at the seams?</p>
-    <div class="reel_img">
-    <img src="/Assets/skin_to_skin.jpg" />
-    <p class="time">09:38</p>
-  </div>
-    <a>LoveSick: Skin to Skin</a>
-    <p> A kaleidoscope of hook-ups and confessions from Ireland’s vibrant LGBTQ+ community</p>
-    <div class="reel_img">
-      <img src="/Assets/sex_sensibility.jpg">
-      <p class="time">02:23</p>
-    </div>
-      <a>Sex and Sensibility: Love and Lost in LA</a>
-      <p>Going under the covers in the search for real sex and intimacy</p>
-  </div>
-  </body>
-</html>
+.menu_container:hover + .navbar {
+  display: block;
+}
+.menu_container:focus + li {
+  display: block;
+} /* necessary?*/
+.menu_container:hover .menu {
+  background-color: rgb(245, 188, 82);
+  /* how to keep this on when interacting */
+}
+.menu_container .menu :focus {
+  background-color: rgb(245, 188, 82);
+}
+.navbar_container .navbar_item:hover {
+  color: rgb(245, 188, 82);
+}
+.video_reels_list img {
+  width: 220px;
+  height: 142px;
+}
+.video_reels_surreal {
+  border-top: 1px solid #c9a16e;
+  padding: 20px; /*unsure if this spacing is right. However when I've changed this, it chanes the timestamp spacing */
+}
+.video_reels_surreal h3 {
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 0.07em;
+}
+
+.video_reels_surreal img {
+  width: 280px;
+  height: 179px;
+  /* margin-bottom: 20px; */
+}
+/*
+Is there a better way to select all the times to put over image. have tried with absolute on .video_reels_surreal img, and position: relative on .video_reels_surreal img  */
+.reel_img {
+  position: relative;
+  /* box-sizing: border-box; */
+}
+.reel_img .time {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background-color: black;
+  color: white;
+  font-size: 11px;
+}
+.video_reels_list img {
+  opacity: 1;
+  transition-property: opacity 0.3s;
+}
+.video_reels_list img:hover {
+  opacity: 0.3;
+}
+.clip_surreal img {
+  opacity: 1;
+  transition-property: opacity 0.3s;
+}
+.clip_surreal img:hover {
+  opacity: 0.3;
+}
+.video_reels_surreal a {
+  font-size: 20px;
+  /* padding-top: 20px; same as note below*/
+  /* margin-top: 20px; don't think this works - how to have a gap between this and the images .reel_img. Previously added to img but them messed up time formatting */
+}
+.video_reels_love {
+  border-top: 1px solid #c9a16e;
+  border-bottom: 1px solid #c9a16e;
+  padding: 20px;
+}
+.video_reels_love h4 {
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 0.07em;
+}
+.video_reels_love img {
+  width: 280px;
+  height: 179px;
+}
+.video_reels_love a {
+  font-size: 20px;
+  /* font-weight: 400; how to make bolder */
+}
+.video_reels_love p {
+  font-size: 17px;
+  /* font-weight: 200;  how to make lighter*/
+}
+
+.clip_love img {
+  opacity: 1;
+  transition-property: opacity 0.3s;
+}
+.clip_love img:hover {
+  opacity: 0.3;
+}
+@media screen and (min-width: 375px) {
+  .video_reels iframe {
+    width: 100%;
+    height: 210px;
+  }
+  .video_reels_surreal img {
+  width: 335px;
+  height: 214px;
+}
+@media screen and (min-width: 425px) {
+  .video_reels iframe {
+    width: 100%;
+    height: 239px;
+  }
+  .video_caption {
+    position: relative;
+  }
+  .video_reels_surreal img {
+    width: 385px;
+    height: 246px;
+}
+@media screen and (min-width: 768px) {
+  .video_reels iframe {
+    width: 100%;
+    height: 387px;
+  }
+  .video_caption {
+    color: #ffffff;
+    position: absolute;
+    top: 300px;
+  }
+  .video_reels_surreal_container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    /* how to structure this so there are gaps between each clip reel, should be 3 areas/ squares? */
+  }
+  .video_reels_section{
+    width: 33.3%;
+    margin: 10px;
+  
+  }
+  .video_reels_surreal img {
+    width: 220px;
+    height: 141px;
+}
+@media screen and (min-width: 800px) {
+  .title_container {
+    justify-content: space-between;
+  }
+  .title_container .icon_container {
+    margin-left: 0;
+  }
+  .title {
+    width: 340px;
+    height: 56px;
+  }
+  .navbar_container {
+    justify-content: center;
+    /* text-align: center; -need rule to change format to center when at computer size, turn off justify-center? */
+  }
+  .video_reels iframe {
+    width: 100%;
+    height: 531px;
+  }
+  .video_caption {
+    color: #ffffff;
+    position: absolute;
+    top: 500px;
+    margin-left: 200px;
+  }
+  .video_reels_surreal_container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+     }
+  .video_reels_section{
+    width: 33.3%;
+    margin: 10px;
+  }
+  .video_reels_surreal img {
+    width: 220px;
+    height: 141px;
+    /* aligning times on images goes off? how to set this properly */
+}
+}
+/*# sourceMappingURL=styles.css.map */
