@@ -1,7 +1,10 @@
 body {
-  font-size: 10px;
+  font-size: 16px;
   font-family: Futura, Trebuchet MS, Arial, sans-serif;
   color: black;
+  box-sizing: border-box;
+  /* letter-spacing: 0.09em; spacing not quite right*/
+  /* margin: 0; */
 }
 .title_container {
   display: flex;
@@ -10,8 +13,8 @@ body {
   padding-top: 12.5px;
   padding-bottom: 12.5px;
   border-bottom: solid grey 1px;
-  background-color: rgb(250, 250, 250);
-  /* position: fixed; */
+  background-color: #ffffff;
+  position: sticky;
   /* justify-content: space-around; */
 }
 
@@ -21,7 +24,6 @@ body {
   height: 4px;
   margin-bottom: 2px;
 }
-
 .menu_container {
   justify-self: start;
   position: relative;
@@ -43,56 +45,42 @@ body {
   width: 17px;
   height: 17px;
 }
+
 .navbar_container {
   display: flex;
   justify-content: space-between;
-  height: 50px;
+  height: 45px;
   font-size: 13px;
+  font-weight: 200;
   overflow: auto;
   overflow-y: scroll;
   white-space: nowrap; /*- what's this do? removes space - but not used white space before? */
-  position: relative;
+  /* position: relative; */
+  top: 43.67px;
+  background-color: #ffffff;
+  margin-top: 10px;
 }
 .navbar_container .navbar_item {
   padding: 15px 20px;
 }
-.title_container {
-  position: sticky;
-  top: 0;
+.video_reels_surreal {
+  margin-top: 2 0px;
 }
-
+.video_reels {
+  margin-bottom: 20px;
+}
 .video_2 {
   width: 220px;
   height: 142px;
 }
-
-/*
-.navbar_item1 {
-  grid-column-start: 2;
-}
-.navbar_item2 {
-  grid-column-start: 3;
-}
-.navbar_item3 {
-  grid-column-start: 4;
-}
-.navbar_item4 {
-  grid-column-start: 5;
-}
-.navbar_item5 {
-  grid-column-start: 6;
-}
-.navbar_item6 {
-  grid-column-start: 7;
-}
-*/
 .video_reels iframe {
   width: 100%;
-  height: 180px;
+  height: 190px;
 }
 .video_caption {
-  margin: 40px 20px 0px 20px;
+  margin: 40px 20px 40px 20px;
   text-align: center;
+  /* how to position this correctly */
 }
 .video_caption h2 {
   font-size: 24px;
@@ -100,31 +88,192 @@ body {
 .video_caption p {
   font-size: 13px;
 }
+.video_reels_list_container {
+  display: grid;
+  align-items: center;
+  overflow-x: scroll;
+  grid-template-columns: repeat(5, 1fr);
+  border-top: 1px solid #c9a16e;
+  margin-bottom: 30px;
+  /* display: flex; 
+  overflow: auto;
+  overflow-y: scroll;*/
+}
+/* could this section be selected with an attribute selector? */
+.video_reels_list {
+  padding: 20px 20px 40px 0px;
+  text-align: center;
+  height: 200px;
+}
+.video_reels_list p {
+  font-size: 13px;
+}
 .navbar {
   display: none;
-  width: 20%;
   position: absolute;
+  left: 0;
+  width: 100%;
+  margin-left: none;
 }
+.navbar ul {
+  padding-inline-start: 0px;
+}
+.navbar li {
+  list-style: none;
+  position: relative;
+  top: 70px;
+  left: 0;
+  text-align: left;
+  width: 100%;
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  /* font-weight: 400; thicker font? */
+  background-color: #f8f8f8;
+}
+
 .menu_container:hover + .navbar {
-  display: inherit;
+  display: block;
+}
+.menu_container:focus + li {
+  display: block;
+} /* necessary?*/
+.menu_container:hover .menu {
+  background-color: rgb(245, 188, 82);
+  /* how to keep this on when interacting */
+}
+.menu_container .menu :focus {
+  background-color: rgb(245, 188, 82);
+}
+.navbar_container .navbar_item:hover {
+  color: rgb(245, 188, 82);
+}
+.video_reels_list img {
+  width: 220px;
+  height: 142px;
+}
+.video_reels_surreal {
+  border-top: 1px solid #c9a16e;
+  padding: 20px; /*unsure if this spacing is right. However when I've changed this, it chanes the timestamp spacing */
+}
+.video_reels_surreal h3 {
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 0.07em;
+}
+
+.video_reels_surreal img {
+  width: 280px;
+  height: 179px;
+  /* margin-bottom: 20px; */
+}
+/*
+Is there a better way to select all the times to put over image. have tried with absolute on .video_reels_surreal img, and position: relative on .video_reels_surreal img  */
+.reel_img {
+  position: relative;
+  /* box-sizing: border-box; */
+}
+.reel_img .time {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background-color: black;
+  color: white;
+  font-size: 11px;
+}
+.video_reels_list img {
+  opacity: 1;
+  transition-property: opacity 0.3s;
+}
+.video_reels_list img:hover {
+  opacity: 0.3;
+}
+.clip_surreal img {
+  opacity: 1;
+  transition-property: opacity 0.3s;
+}
+.clip_surreal img:hover {
+  opacity: 0.3;
+}
+.video_reels_surreal a {
+  font-size: 20px;
+  /* padding-top: 20px; same as note below*/
+  /* margin-top: 20px; don't think this works - how to have a gap between this and the images .reel_img. Previously added to img but them messed up time formatting */
+}
+.video_reels_love {
+  border-top: 1px solid #c9a16e;
+  border-bottom: 1px solid #c9a16e;
+  padding: 20px;
+}
+.video_reels_love h4 {
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 0.07em;
+}
+.video_reels_love img {
+  width: 280px;
+  height: 179px;
+}
+.video_reels_love a {
+  font-size: 20px;
+  /* font-weight: 400; how to make bolder */
+}
+.video_reels_love p {
+  font-size: 17px;
+  /* font-weight: 200;  how to make lighter*/
+}
+
+.clip_love img {
+  opacity: 1;
+  transition-property: opacity 0.3s;
+}
+.clip_love img:hover {
+  opacity: 0.3;
 }
 @media screen and (min-width: 375px) {
   .video_reels iframe {
     width: 100%;
     height: 210px;
   }
+  .video_reels_surreal img {
+  width: 335px;
+  height: 214px;
 }
 @media screen and (min-width: 425px) {
   .video_reels iframe {
     width: 100%;
     height: 239px;
   }
+  .video_caption {
+    position: relative;
+  }
+  .video_reels_surreal img {
+    width: 385px;
+    height: 246px;
 }
 @media screen and (min-width: 768px) {
   .video_reels iframe {
     width: 100%;
     height: 387px;
   }
+  .video_caption {
+    color: #ffffff;
+    position: absolute;
+    top: 300px;
+  }
+  .video_reels_surreal_container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    /* how to structure this so there are gaps between each clip reel, should be 3 areas/ squares? */
+  }
+  .video_reels_section{
+    width: 33.3%;
+    margin: 10px;
+  
+  }
+  .video_reels_surreal img {
+    width: 220px;
+    height: 141px;
 }
 @media screen and (min-width: 800px) {
   .title_container {
@@ -145,5 +294,25 @@ body {
     width: 100%;
     height: 531px;
   }
+  .video_caption {
+    color: #ffffff;
+    position: absolute;
+    top: 500px;
+    margin-left: 200px;
+  }
+  .video_reels_surreal_container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+     }
+  .video_reels_section{
+    width: 33.3%;
+    margin: 10px;
+  }
+  .video_reels_surreal img {
+    width: 220px;
+    height: 141px;
+    /* aligning times on images goes off? how to set this properly */
+}
 }
 /*# sourceMappingURL=styles.css.map */
