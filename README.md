@@ -1,9 +1,5 @@
-The Jump Homage piece
-NOWNESS site replica
+The Jump Digital School project
+This is a Homage piece to the site [NOWNESS](https://www.nowness.com/)
 
-[Link to live project](netlify)
-![Logo](hotlink)
 :joy:
-==Important== project
-|Name |Age | Location|
-this is homage piece, link to original and link to my version.
+
